@@ -1,20 +1,26 @@
 package model.entity.carros;
 
+import java.sql.Date;
+
 public class Montadora {
 	
 	private Integer id;
 	private String nome;
 	private String paisFundacao;
+	private String nomePresidente;
+	private Date dataFundacao;
 	
 	public Montadora() {
 		
 	}
 	
-	public Montadora(Integer id, String nome, String paisFundacao) {
+	public Montadora(Integer id, String nome, String paisFundacao, String nomePresidente, Date dataFundacao) {
 		super();
 		this.id = id;
 		this.nome = nome;
 		this.paisFundacao = paisFundacao;
+		this.nomePresidente = nomePresidente;
+		this.dataFundacao = dataFundacao;
 	}
 	
 	public Integer getId() {
@@ -34,5 +40,21 @@ public class Montadora {
 	}
 	public void setPaisFundacao(String paisFundacao) {
 		this.paisFundacao = paisFundacao;
+	}
+	
+	public String getNomePresidente() {
+		return nomePresidente;
+	}
+	
+	public void setNomePresidente(String nomePresidente) {
+		this.nomePresidente = nomePresidente;
+	}
+	
+	public Date getDataFundacao() {
+		return dataFundacao;
+	}
+	
+	public void setDataFundacao(Date dataFundacao) {
+		this.dataFundacao = dataFundacao;
 	}
 }
